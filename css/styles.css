@@ -52,10 +52,12 @@ button:hover {
 }
 
 #results {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 16px;
   margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -64,6 +66,7 @@ button:hover {
   padding: 12px;
   text-align: center;
   border: 1px solid #1f2937;
+  max-width: 266px;
 }
 
 .card img {
